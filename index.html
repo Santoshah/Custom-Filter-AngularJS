@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Filter | Angular JS</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="js/script.js"></script>
+	<!-- <script src="js/filter.js"></script> -->
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myController">
+
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>Subject</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="student in students">
+				<td>{{student.name}}</td>
+				<td>{{student.gender | gender}}</td>
+				<td>{{student.subject}}</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+</div>
+</body>
+</html>
